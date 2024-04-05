@@ -1,0 +1,110 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./vite-promo.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 24px;
+}
+
+.gallery {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-information-container {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  padding-left: 20px;
+  padding-top: 4px;
+}
+
+.photos-list-item {
+  transition: 0.7s;
+  border: 2px solid #808080;
+}
+
+.photos-list-item:hover {
+  transform: scale(01.05);
+}
+.photo {
+  display: block;
+  width: 360px;
+  height: 240px;
+  contain: content;
+}
+
+.loader {
+  margin: auto;
+  border: 5px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 5px solid blue;
+  width: 40px;
+  height: 40px;
+  animation: spinner 4s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+button {
+  width: 91px;
+  height: 57px;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #6c8cff;
+}
+input {
+  outline: 0;
+  outline-offset: 0;
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
