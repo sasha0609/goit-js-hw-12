@@ -99,6 +99,16 @@ button {
 button:hover {
   background-color: #6c8cff;
 }
+.btn {
+  width: 125px;
+  height: 40px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
 input {
   outline: 0;
   outline-offset: 0;
